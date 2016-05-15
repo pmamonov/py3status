@@ -123,7 +123,7 @@ class Py3status:
     # available configuration parameters
     cache_timeout = 10
     format = "CPU: {cpu_usage}%, " \
-        "Mem: {mem_used}/{mem_total} GB ({mem_used_percent}%)"
+        "Mem: {mem_used}/{mem_total} GB"
     high_threshold = 75
     med_threshold = 40
 
@@ -157,7 +157,6 @@ class Py3status:
                 cpu_temp=cpu_temp,
                 mem_used='%.2f' % mem_used,
                 mem_total='%.2f' % mem_total,
-                mem_used_percent='%.2f' % mem_used_percent,
             )
         }
 
